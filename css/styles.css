@@ -1,0 +1,265 @@
+/* Changing all fonts to Poppins */
+* {
+    
+    font-family: Poppins, Arial;
+   }
+
+/*NAVBAR*/
+/*To make a box appear when you hover over the navbar*/
+a:hover{
+    background-color:#aaa;
+    color:white;
+}
+
+/*To make a box appear when you click on the navbar*/
+a:active{
+    background-color:#545454;
+    color:white;
+}
+
+/*Make active page bold*/
+a.active{
+    font-weight: 900;
+}
+
+/*size of main header*/
+.main-header{
+    font-size: 25px ;
+}
+
+/* size of headers contact info text */
+.headytext{
+    font-size: 15px !important;
+}
+
+/* Main Body */
+
+
+  /* Text*/
+/* Hi text */
+.htitle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 500% !important;
+}
+
+/* Padding of the small summary */
+ #smallSummary{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* PORTFOLIO PAGE */
+
+/* Images */
+ img {
+    margin: 1%  5% 1% 1%; 
+    height:auto;
+    width: 70%;
+    max-width:100%;
+    text-align: center;
+}
+
+/* Captions of images */
+.projectCap{
+    padding: 0px;
+    margin:0px;
+    text-align: center;
+    border: 5px;
+    border-style: double;
+    
+    font-size: 200% !important;
+}
+
+/*  Projects in general */
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+
+/* All specific projects */
+.pro1, .pro2, .pro3{
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 33.3%;
+}
+
+/* Make the screen two columns when medium size*/
+@media (max-width: 900px) {
+    .project {
+      flex: 50%;
+    }
+}
+/* Make the screen one column when small */
+@media (max-width: 600px) {
+    .project {
+      flex: 100%;
+    }
+}
+
+/* Project Descriptions in general */
+#desc1, #desc2, #desc3{
+    padding: 1% 20% 0.5% 20%;
+    font-size: 100% !important;
+}
+
+
+/* AOUT ME */
+
+/* H1/H2 TAG */
+h1, h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+/* Education */
+.education{
+    margin: 10% 0% 0% 0%;
+
+}
+
+/* For education's texts in general */
+.eduText{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+/* For the specific lines of education */
+.eduSchool{
+    background-color:rgb(247, 231, 245);
+    padding: 0.5%;
+
+}
+
+/* Programs images */
+.proImage{
+    width:10%;
+}
+
+/* Skills stars */
+@media (max-width: 380px) {
+    .bi-star-fill, .bi-star{
+        width:5%;
+         height:5%;
+    }
+}
+
+/* Work exp images */
+.workExpImg{
+    width:30% !important;
+    max-width: 100%;
+}
+
+/* Work experience section to make them on top of each other */
+.worky{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction:column;
+    justify-content: space-around;
+    background-color:rgb(247, 231, 245);
+    padding: 0.5%;
+    
+}
+
+/* Interests Text */
+.intText{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+    
+}
+
+/* Valorant interest images */
+.interestImg{
+    width: 30%;
+} 
+
+/* Valorant flex boxes */
+.valoSection{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+/* Valorant copyright section */
+.valCopyright{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+/* Contact me PAGE */
+
+/* Make the margin rly small when large size*/
+@media (min-width: 1200px) {
+    .contact-me {
+        margin:10% 0% 0% 0%;
+    }
+}
+
+/* Make the margin properly sized when medium size*/
+@media (min-width: 900px) {
+    .contact-me {
+        margin:10% 0% 0% 0%;
+    }
+}
+
+/* Make the margin big when bigger than small but smaller than med */
+@media (min-width: 600px) {
+    .contact-me {
+        margin:10% 0% 0% 0%;
+    }
+}
+
+/* Make the margin big when small */
+@media (max-width: 600px) {
+    .contact-me {
+        margin:15% 0% 0% 0%;
+    }
+}
+
+/* Contact me form colour */
+.contact-me-form{
+    background-color:rgb(247, 231, 245);
+    padding: 2.5%;
+}
+
+/* Submit button */
+.submit{
+    background-color:rgb(219, 230, 252);
+    border-color: rgb(193, 189, 245);
+}
+
+

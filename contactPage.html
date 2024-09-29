@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Important links and stuff-->
+    <title>Safa's About</title>
+    <link rel="icon" type="image/x-icon" href="../pics/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="../js/main.js" ></script>
+
+  </head>
+
+  <body>
+    <!-- header section-->
+    <header class="main-header fixed-top">
+      <!-- top nav bar-->
+      <nav class="navbar navbar-expand-sm  bg-primary-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Safa Riasat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="projectPage.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutPage.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contactPage.html">Contact me</a>
+                  </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+
+      <!-- Header contact text -->
+      <p class="headytext text-center bg-light">
+        <a href = "mailto:230078145@aston.ac.uk" rel = "author">230078145@aston.ac.uk</a> 
+        | 230078145</p>
+            
+    </header>
+
+    <!-- Main stuff -->
+
+    <main>
+
+      <!-- Form -->
+      <div class = " contact-me container text-center pt-5 pt-lg-2  px-lg-3 pt-lg-3 pt-xl-3">
+        <!-- Top text -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-paper-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75zM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765M16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
+        </svg>
+        <h1 class = mt-3>Say hi!</h1>
+        <h4>
+          Fill out this form to send me an enquiry about a project :D
+        </h4>
+
+
+        <!-- Form start -->
+        <form class = "contact-me-form mt-4" onsubmit="event.preventDefault(); validateForm()">
+
+          <!-- Name -->
+          <div class = "form-element">
+            <input type ="text" name="name" id = "name" placeholder="First Name" class = "mx-3 mb-3" required/>
+          </div>
+          
+          <!-- Email -->
+          <div class = "form-element">
+            <input type="email" name="email1" id = "email1" placeholder="Email" class = "mx-3 mb-3" required/>
+          </div>
+			    
+          <!-- EmailConfirm -->
+          <div class = "form-element">
+            <input type="email" name="email2" id = "email2" placeholder="Confirm Email" class = "mx-3 mb-3" required/>
+          </div>
+
+          <!-- Phonenum -->
+          <div class = "form-element">
+            <input type="tel" name="phoneNum" id = "phoneNum" placeholder="Phone Number" class = "mx-3 mb-3" required/>
+          </div>
+
+          <!-- Contact Preferences -->
+          <div class = "form-element mx-3 mb-3">
+            <label for="contactPref">Contact Preferences:</label>
+            <label><input type = "checkbox" id = "contactPref" name="contactPref "value="sms" /> Text</label>
+            <label><input type="checkbox" id = "contactPref2" name="contactPref"value= "emails"/> Email</label>
+          </div>
+
+          <!-- Date -->
+          <div class = "form-element">
+            <label for="projectStart">Project Start Date:</label>
+            <input type="date" id="projectStart" name="projectStart" class = "mx-3 mb-3" required>
+          </div>
+
+          <!-- Length -->
+          <div class = "form-element">
+            <label for="duration">Project Duration:</label>
+            <input type ="number" name="durationNum" id="durationNum" placeholder="Length" min="1" max="10" class = "mx-3 mb-3" required/>
+			      <input list="projectDuration" name="duration" placeholder="Type of Length" id = "duration" class = "mb-3" required>
+            <datalist id="projectDuration">
+              <option value="Day(s)">
+              <option value="Month(s)">
+              <option value="Year(s)">
+            </datalist>
+
+          </div>
+          
+          <!-- Description -->
+          <div class = "form-element">
+            <label for="projectDescription"> Tell me a bit more about the project: </label>
+            <div class = " mb-3">
+              <textarea name="projectDescription" id = "projectDescription" rows= "3"cols="40" required> This project...  </textarea>
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <div class = "submit ">
+            <input type= "submit" name= "submit" class ="submit" /> 
+          </div>
+        </form>
+
+        <!-- Text at the end -->
+        <div class = "endText mt-4 mb-5 ">
+          <h2>I look forward to working together soon!</h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+          </svg>
+          
+        </div>
+        
+
+      </div>
+
+
+ </main>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <!-- Footer Text -->
+        © 2024 Copyright: Safa Riasat
+        <a class="text-white" href="https://github.com/">Github</a>
+        <a class="text-white" href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap link cont -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+  </body> 
+
+
+</html>
